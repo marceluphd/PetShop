@@ -10,7 +10,9 @@
   "dependencies": {
     "react": "16.8.6",
     "react-native": "0.60.5",
+    "react-native-drawer": "^2.5.1",
     "react-native-gesture-handler": "^1.3.0",
+    "react-native-tab-navigator": "^0.3.4",
     "react-navigation": "^3.11.1"
   },
   "devDependencies": {

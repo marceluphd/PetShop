@@ -1,11 +1,11 @@
 import {createStackNavigator, createAppContainer} from 'react-navigation';
 import {Easing, Animated} from 'react-native';
-import Main from '../screens/Main';
-import Authentication from '../screens/Authentication';
-import ChangeInfor from '../screens/ChangeInfor';
-import OrderHistory from '../screens/OrderHistory';
+import Main from '../components/Main/Main';
+import Authentication from '../components/Authentication/Authentication';
+import ChangeInfor from '../components/ChangeInfor/ChangeInfor';
+import OrderHistory from '../components/OrderHistory/OrderHistory';
 
-const MainNavigator = createStackNavigator(
+const RootStack = createStackNavigator(
   {
     Main: Main,
     Authentication: Authentication,
@@ -41,6 +41,6 @@ const MainNavigator = createStackNavigator(
   },
 );
 
-const App = createAppContainer(MainNavigator);
+const App = createAppContainer(RootStack);
 
 export default App;
